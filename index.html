@@ -3,115 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AURA // Premium Digital Storefront</title>
-    <!-- Tiny tab icon (built into the code, so no extra file is needed) -->
+    <title>Sterling | Web Designer &amp; Host</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
-    <!-- Tailwind (handles colors and layout) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #09090b; }
     </style>
 </head>
-<body class="text-zinc-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+<body class="text-zinc-100 min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
 
-    <!-- Navigation Header -->
+    <!-- Top bar -->
     <nav class="border-b border-zinc-800/80 backdrop-blur-md sticky top-0 bg-zinc-950/70 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-widest bg-gradient-to-r from-zinc-100 to-zinc-400 bg-clip-text text-transparent">A U R A</a>
-            <div class="hidden md:flex space-x-8 text-sm tracking-wide text-zinc-400">
-                <a href="#" class="hover:text-zinc-100 transition-colors">Collections</a>
-                <a href="#" class="hover:text-zinc-100 transition-colors">Digital Passes</a>
-                <a href="#" class="hover:text-zinc-100 transition-colors">About</a>
+        <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="#" class="text-lg font-bold tracking-widest">STERLING</a>
+            <div class="flex space-x-6 text-sm text-zinc-400">
+                <a href="#work" class="hover:text-zinc-100 transition-colors">Work</a>
+                <a href="#contact" class="hover:text-zinc-100 transition-colors">Contact</a>
             </div>
-            <button class="relative p-2 text-zinc-400 hover:text-zinc-100 transition-colors cursor-pointer">
-                <span class="absolute -top-1 -right-1 bg-indigo-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" /></svg>
-            </button>
         </div>
     </nav>
 
-    <!-- Hero Showcase Section -->
-    <header class="max-w-7xl mx-auto px-6 pt-16 pb-20 w-full text-center">
-        <span class="text-xs font-semibold tracking-[0.2em] text-indigo-400 uppercase">Premium Digital Assets</span>
-        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mt-4 mb-6 max-w-3xl mx-auto leading-tight bg-gradient-to-b from-white via-zinc-200 to-zinc-500 bg-clip-text text-transparent">
-            Elevate your collection with cinematic clarity.
+    <!-- Introduction -->
+    <header class="max-w-5xl mx-auto px-6 pt-24 pb-20 w-full">
+        <span class="text-xs font-semibold tracking-[0.2em] text-indigo-400 uppercase">Web Designer &amp; Host</span>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mt-4 mb-6 leading-tight">
+            Hi, I’m Sterling.
         </h1>
-        <p class="text-zinc-400 text-lg max-w-xl mx-auto font-light leading-relaxed">
-            Exclusive access passes, limited edition high-tier cinematic merchandise, and interactive AI digital blueprints.
+        <p class="text-zinc-400 text-lg max-w-xl font-light leading-relaxed">
+            I’m a professional web designer. I design modern, clean websites and help bring them online.
         </p>
+        <a href="#work" class="inline-block mt-8 bg-zinc-100 hover:bg-white text-zinc-950 font-semibold px-5 py-3 rounded-lg text-sm transition-colors">See my work</a>
     </header>
 
-    <!-- Product Grid System -->
-    <main class="max-w-7xl mx-auto px-6 w-full mb-auto pb-24">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Projects -->
+    <main id="work" class="max-w-5xl mx-auto px-6 w-full pb-24">
+        <h2 class="text-2xl font-semibold mb-8">Selected work</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <!-- Card 1 -->
-            <div class="group border border-zinc-800 bg-zinc-900/30 rounded-2xl p-5 hover:border-zinc-700/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
-                <div>
-                    <div class="aspect-square w-full rounded-xl bg-gradient-to-tr from-zinc-950 via-zinc-900 to-indigo-950/40 border border-zinc-800/60 flex items-center justify-center relative overflow-hidden group-hover:border-zinc-700/40 transition-colors">
-                        <div class="absolute inset-0 bg-indigo-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <span class="text-xs font-mono tracking-widest text-indigo-300 border border-indigo-500/30 px-3 py-1.5 rounded-full bg-indigo-950/20">PREMIUM PASS</span>
-                    </div>
-                    <div class="mt-6 flex justify-between items-start">
-                        <div>
-                            <h3 class="font-semibold text-lg text-zinc-200 group-hover:text-white transition-colors">Genesis Collector Access</h3>
-                            <p class="text-zinc-500 text-xs mt-1 font-light tracking-wide">Instant streaming key + physical display frame bundle</p>
-                        </div>
-                    </div>
+            <!-- Project 1: AURA -->
+            <div class="border border-zinc-800 bg-zinc-900/30 rounded-2xl p-5 hover:border-zinc-700/60 transition-all duration-300 hover:-translate-y-1">
+                <div class="aspect-video w-full rounded-xl bg-gradient-to-tr from-zinc-950 via-zinc-900 to-indigo-950/40 border border-zinc-800/60 flex items-center justify-center">
+                    <span class="text-xs font-mono tracking-widest text-indigo-300 border border-indigo-500/30 px-3 py-1.5 rounded-full bg-indigo-950/20">AURA</span>
                 </div>
-                <div class="mt-6 flex items-center justify-between pt-4 border-t border-zinc-800/60">
-                    <span class="font-semibold text-zinc-300 text-lg">$149.00</span>
-                    <button class="bg-zinc-100 hover:bg-white text-zinc-950 font-semibold px-4 py-2 rounded-lg text-xs tracking-wide cursor-pointer transition-all duration-200 shadow-sm active:scale-95">Add to Cart</button>
+                <h3 class="font-semibold text-lg mt-6">AURA: Premium Digital Storefront</h3>
+                <p class="text-zinc-500 text-sm mt-2 font-light">A dark, modern online store page for digital products, built with HTML and Tailwind CSS.</p>
+                <div class="mt-5 flex space-x-4 text-sm">
+                    <a href="https://premium-ecommerce-store-indol.vercel.app" target="_blank" rel="noopener" class="text-indigo-400 hover:text-indigo-300 transition-colors">Live site →</a>
+                    <a href="https://github.com/Stellz-hash/premium-ecommerce-store" target="_blank" rel="noopener" class="text-zinc-400 hover:text-zinc-100 transition-colors">View code →</a>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="group border border-zinc-800 bg-zinc-900/30 rounded-2xl p-5 hover:border-zinc-700/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
-                <div>
-                    <div class="aspect-square w-full rounded-xl bg-gradient-to-tr from-zinc-950 via-zinc-900 to-purple-950/40 border border-zinc-800/60 flex items-center justify-center relative overflow-hidden group-hover:border-zinc-700/40 transition-colors">
-                        <div class="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <span class="text-xs font-mono tracking-widest text-purple-400/80 border border-purple-500/20 px-3 py-1.5 rounded-full bg-purple-950/20">CINEMATIC BUNDLE</span>
-                    </div>
-                    <div class="mt-6 flex justify-between items-start">
-                        <div>
-                            <h3 class="font-semibold text-lg text-zinc-200 group-hover:text-white transition-colors">Director's Script Master</h3>
-                            <p class="text-zinc-500 text-xs mt-1 font-light tracking-wide">Signed digital architecture and character logic prompt assets</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-6 flex items-center justify-between pt-4 border-t border-zinc-800/60">
-                    <span class="font-semibold text-zinc-300 text-lg">$79.00</span>
-                    <button class="bg-zinc-100 hover:bg-white text-zinc-950 font-semibold px-4 py-2 rounded-lg text-xs tracking-wide cursor-pointer transition-all duration-200 shadow-sm active:scale-95">Add to Cart</button>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="group border border-zinc-800 bg-zinc-900/30 rounded-2xl p-5 hover:border-zinc-700/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
-                <div>
-                    <div class="aspect-square w-full rounded-xl bg-gradient-to-tr from-zinc-950 via-zinc-900 to-emerald-950/40 border border-zinc-800/60 flex items-center justify-center relative overflow-hidden group-hover:border-zinc-700/40 transition-colors">
-                        <div class="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <span class="text-xs font-mono tracking-widest text-emerald-400/80 border border-emerald-500/20 px-3 py-1.5 rounded-full bg-emerald-950/20">DIGITAL ONLY</span>
-                    </div>
-                    <div class="mt-6 flex justify-between items-start">
-                        <div>
-                            <h3 class="font-semibold text-lg text-zinc-200 group-hover:text-white transition-colors">Soundtrack &amp; Score Vault</h3>
-                            <p class="text-zinc-500 text-xs mt-1 font-light tracking-wide">Lossless spatial audio recordings and atmospheric layers</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-6 flex items-center justify-between pt-4 border-t border-zinc-800/60">
-                    <span class="font-semibold text-zinc-300 text-lg">$45.00</span>
-                    <button class="bg-zinc-100 hover:bg-white text-zinc-950 font-semibold px-4 py-2 rounded-lg text-xs tracking-wide cursor-pointer transition-all duration-200 shadow-sm active:scale-95">Add to Cart</button>
-                </div>
+            <!-- Placeholder for the next project -->
+            <div class="border border-dashed border-zinc-800 rounded-2xl p-5 flex items-center justify-center text-zinc-600 text-sm min-h-[16rem]">
+                More projects coming soon
             </div>
 
         </div>
     </main>
 
+    <!-- Contact -->
+    <section id="contact" class="max-w-5xl mx-auto px-6 w-full pb-24">
+        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+        <p class="text-zinc-400 font-light">
+            Find me on GitHub:
+            <a href="https://github.com/Stellz-hash" target="_blank" rel="noopener" class="text-indigo-400 hover:text-indigo-300 transition-colors">Stellz-hash</a>
+        </p>
+    </section>
+
     <!-- Footer -->
-    <footer class="border-t border-zinc-900 bg-zinc-950/40 py-8 text-center text-xs text-zinc-600 tracking-wide">
-        &copy; 2026 AURA LLC. All rights reserved.
+    <footer class="border-t border-zinc-900 py-8 text-center text-xs text-zinc-600 tracking-wide mt-auto">
+        &copy; 2026 Sterling. All rights reserved.
     </footer>
 
 </body>
